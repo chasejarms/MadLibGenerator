@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="mad-lib.css">
+</head>
+<body>
+  <h1>Mad Lib Generator</h1>
+  <p>Ever heard of MadLibs? Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the - often comical or nonsensical - story aloud. The game is frequently played as a party game or as a pastime. The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958. Follow this link for more information: http://en.wikipedia.org/wiki/Mad_Libs</p>
+  <form>
+      <label>Nouns
+          <input type="text" placeholder="noun, noun, noun, noun" id="nouns" name="noun-box">
+      </label>
+      <label>Adjectives
+          <input type="text" placeholder="adjective, adjective, adjective, adjective" id="adjectives" name="adjective-box">
+      </label>
+      <label>Adverbs
+          <input type="text" placeholder="adverb, adverb, adverb, adverb" id="adverbs" name="adverb-box">
+      </label>
+      <label>Verbs
+          <input type="text" placeholder="verb, verb, verb, verb" id="verbs" name="verb-box">
+      </label>
+      <label>Story One
+          <input type="radio" name="story" id="story_one">
+      </label>
+      <label>Story Two
+          <input type="radio" name="story" id="story_two">
+      </label>
+      <label>Story Three
+          <input type="radio" name="story" id="story_three">
+      </label>
+      <hr>
+      <label>
+          <input type="submit" onclick="easyPeezyLemonSqueezy()">
+      </label>
+  </form>
+  <div id="result">
+  </div>
+</body>
+<script type="text/javascript" src="mad-lib.js"></script>
+</html>

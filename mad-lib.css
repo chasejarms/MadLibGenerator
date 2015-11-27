@@ -1,0 +1,13 @@
+body {
+  text-align: justify;
+  margin: 5vw 15vw 5vw 15vw;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
