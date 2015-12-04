@@ -3,38 +3,48 @@
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="mad-lib.css">
+  <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <h1>Mad Lib Generator</h1>
   <p>Ever heard of MadLibs? Mad Libs is a phrasal template word game where one player prompts others for a list of words to substitute for blanks in a story, before reading the - often comical or nonsensical - story aloud. The game is frequently played as a party game or as a pastime. The game was invented in the United States, and more than 110 million copies of Mad Libs books have been sold since the series was first published in 1958. Follow this link for more information: http://en.wikipedia.org/wiki/Mad_Libs</p>
-  <form>
-      <label>Nouns
-          <input type="text" placeholder="noun, noun, noun, noun" id="nouns" name="noun-box">
-      </label>
-      <label>Adjectives
-          <input type="text" placeholder="adjective, adjective, adjective, adjective" id="adjectives" name="adjective-box">
-      </label>
-      <label>Adverbs
-          <input type="text" placeholder="adverb, adverb, adverb, adverb" id="adverbs" name="adverb-box">
-      </label>
-      <label>Verbs
-          <input type="text" placeholder="verb, verb, verb, verb" id="verbs" name="verb-box">
-      </label>
-      <label>Story One
-          <input type="radio" name="story" id="story_one">
-      </label>
-      <label>Story Two
-          <input type="radio" name="story" id="story_two">
-      </label>
-      <label>Story Three
-          <input type="radio" name="story" id="story_three">
-      </label>
-      <hr>
-      <label>
-          <input type="submit" onclick="easyPeezyLemonSqueezy()">
-      </label>
-  </form>
-  <div id="result">
+  <div>
+      <div id="all-user-input">
+          <div class="user-input" id="user-input-labels">
+              <label>Nouns:</label>
+              <label>Adjectives:</label>
+              <label>Verbs:</label>
+              <label>Adverbs:</label>
+          </div>
+          <div class="user-input" id="user-input-entries">
+              <input type="text" placeholder="tree, football, shirt, tires" id="nouns" name="noun-box">
+              <br>
+              <input type="text" placeholder="green, tall, tiny, insane" id="adjectives" name="adjective-box">
+              <br>
+              <input type="text" placeholder="quickly, timely, boldly, nicely" id="adverbs" name="adverb-box">
+              <br>
+              <input type="text" placeholder="run, talk, text, groom" id="verbs" name="verb-box">
+          </div>
+          <div id="choose-story">
+            <label for="story_one">Story One
+                <input type="radio" name="story" id="story_one">
+            </label>
+            <label for="story_two">Story Two
+                <input type="radio" name="story" id="story_two">
+            </label>
+            <label for="story_three">Story Three
+                <input type="radio" name="story" id="story_three">
+            </label>
+          </div>
+          <button onclick="easyPeezyLemonSqueezy()">Create Story</button>
+      </div>
+
+      <div id="result">
+          <div id="any-story-output">
+              <p id = "final-story"></p>
+              <h1 id="display-see-story">See your story here!</h1>
+          </div>
+      </div>
   </div>
 </body>
 <script type="text/javascript" src="mad-lib.js"></script>

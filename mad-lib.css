@@ -1,6 +1,12 @@
 body {
   text-align: justify;
-  margin: 5vw 15vw 5vw 15vw;
+  margin: 41px 250px 150px 250px;
+  background-color: #FFC107;
+  color: black;
+  font-family: "Luckiest Guy" , cursive;
+}
+p {
+  font-family: cursive;
 }
 
 h1 {
@@ -9,5 +15,84 @@ h1 {
 
 label {
   display: block;
+  text-align: left;
+  margin: 15px 0px 0px 0px;
+}
+
+#choose-story label {
+  display: inline;
+}
+#choose-story {
+  margin: 30px 0px 30px 0px;
   text-align: center;
+}
+.user-input {
+  display: inline-block;
+  margin-right: 0px;
+}
+#user-input-entries {
+  margin: 0px 0px 0px 45px;
+}
+#user-input-entries input{
+  margin: 13.5px 0px 0px 0px;
+  width: 215px;
+  border-radius: 3px;
+  border: #1E65FC solid 1px;
+  background-color: #B8CDFF;
+}
+.story-radio-box {
+  display: block;
+}
+button {
+  width: 356px;
+  background-color: #98B9FF;
+  border: #1E65FC solid 2px;
+  border-radius: 7px;
+}
+button:hover{
+  background-color: #1FAF75;
+  border-color: #007848;
+}
+#all-user-input {
+  border: #1E65FC solid 3px;
+  padding: 0px  10px 10px;
+  width: 359px;
+  background-color: #709EFF;
+}
+#all-user-input, #result{
+  display: inline-block;
+  border-radius: 10px;
+}
+#result {
+  width: 434px;
+  height: 242px;
+  padding: 5px 5px 5px 5px;
+  font-style: italic;
+  float: right;
+  border: #007848 solid 3px;
+  background-color: #1FAF75;
+  color: #007848;
+  font-size: 15px;
+}
+#display-see-story {
+  line-height: 160px;
+
+}
+#final-story {
+  color: black;
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+#any-story-output {
+    display: table;
+}
+#result h1 {
+  position: relative;
+  top: 23px;
+  right: -55px;
+}
+#result p {
+  font-size: 14px;
+  font-family: cursive;
 }
